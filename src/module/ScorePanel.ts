@@ -1,11 +1,11 @@
 export default class ScorePanel {
-    score: number = 0
-    level: number = 1
+    score = 0
+    level = 1
     scoreEle: HTMLElement
     levelEle: HTMLElement
     maxLevel: number
     upLevel: number
-    constructor(maxLevel: number, uplevel: number) {
+    constructor(maxLevel: number = 10, uplevel: number = 10) {
         this.maxLevel = maxLevel
         this.upLevel = uplevel
         this.scoreEle = document.querySelector('#score')!

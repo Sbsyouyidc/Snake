@@ -1,10 +1,5 @@
 import './css/index.less'
-import Food from './module/Food'
-import ScorePanel from './module/ScorePanel'
-import Snake from './module/Snake'
+import GameControl from './module/GameControl'
 
-
-
-let snake = new Snake()
-snake.addBody()
-
+new GameControl()
+ 
