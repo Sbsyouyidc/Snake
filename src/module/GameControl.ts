@@ -18,12 +18,12 @@ export default class GameControl {
     init() {
         //调用者为document，里面的this指向的是dom中的dirction不是class里面的
         document.addEventListener('keydown', this.keydownHandler.bind(this))
+        this.run()
     }
 
     keydownHandler(event: KeyboardEvent) {
         console.log(event.key);
         this.direction = event.key
-        this.run()
     }
 
     run() {

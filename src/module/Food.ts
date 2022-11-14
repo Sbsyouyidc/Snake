@@ -14,6 +14,6 @@ export default class Food {
         let top = Math.round(Math.random() * 29) * 10
         let left = Math.round(Math.random() * 29) * 10
         this.element.style.top = `${top}px`
-        this.element.style.top = `${left}px`
+        this.element.style.left = `${left}px`
     }
 }
