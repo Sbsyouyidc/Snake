@@ -37,8 +37,9 @@ export default class Snake {
             }
         }
         this.moveBody()
-        // this.checkHeadBody()
+
         this.head.style.left = value + 'px'
+        this.checkHeadBody()
     }
     set Y(value: number) {
         if (this.Y === value) {
@@ -55,8 +56,9 @@ export default class Snake {
             }
         }
         this.moveBody()
-        // this.checkHeadBody()
+
         this.head.style.top = value + 'px'
+        this.checkHeadBody()
     }
 
     addBody() {
